@@ -5,17 +5,18 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: #a09c9c;
 }
 
 #main-box {
-    background-color: #a09c9c;
-    width: 50vw;
-    height: 60vh;
-    border: 2px solid grey;
+    width: 60vw;
+    height: 75vh;
+    background-color: #8b8b8b;
+    border: 2px solid rgb(100, 100, 100);
     display:flex;
     justify-content: center;
     align-items:center;
-    padding:5px
+    padding:5px;
 }
 
 #left, #right {
@@ -29,10 +30,10 @@ body {
 
 #grid-box {
     height:auto;
-    min-height:35vh;
-    min-width: 35vh;
+    min-height:45vh;
+    min-width: 45vh;
     margin:10px;
-    border: 2px solid green;
+    border: 1px solid rgb(100, 100, 100);
     display:grid;
     grid-template-columns: repeat(var(--grid-columns), auto);
     grid-template-rows: repeat(var(--grid-rows), auto);
@@ -43,6 +44,22 @@ body {
     padding:1px;
 }
 
-.changed-grid-item {
-    background-color: black;
+#left {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:5px;
+}
+#Etch {
+    color:rgb(243, 243, 243);
+    font-weight: 600;
+    font-size:2em;
+    text-align:center;
+}
+
+.btns {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:5px;
 }
